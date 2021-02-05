@@ -18,6 +18,7 @@ import styles from './index.less';
 export default function ProductStats(props: IProductStats) {
   const { form } = props;
 
+  // record filter fields change
   const [filterPrice, setFilterPrice] = useState<number | undefined>(undefined);
   const [filterUpperPrice, setFilterUpperPrice] = useState<number | undefined>(
     undefined,
@@ -26,6 +27,8 @@ export default function ProductStats(props: IProductStats) {
     'above' | 'below' | 'between'
   >('above');
 
+  // separate filter values with search values will avoid applying filter to table data whenever fields changed.
+  // in opposite, it will only apply the filter when user click search button.
   const [searchPrice, setSearchPrice] = useState<number | undefined>(undefined);
   const [searchUpperPrice, setSearchUpperPrice] = useState<number | undefined>(
     undefined,
@@ -33,6 +36,7 @@ export default function ProductStats(props: IProductStats) {
   const [searchPriceDirection, setSearchPriceDirection] = useState<
     'above' | 'below' | 'between'
   >('above');
+
   const resetFilter = (clearFilter: any) => {
     clearFilter();
     setFilterPrice(undefined);
@@ -44,9 +48,8 @@ export default function ProductStats(props: IProductStats) {
     setSearchPriceDirection('above');
   };
 
-  const handleFilterRadioChange = (e: any) => {
+  const handleFilterRadioChange = (e: any) =>
     setFilterPriceDirection(e.target.value);
-  };
 
   const columns = [
     {
@@ -116,7 +119,8 @@ export default function ProductStats(props: IProductStats) {
                   setSearchPrice(filterPrice);
                   setSearchUpperPrice(filterUpperPrice);
                   setSearchPriceDirection(filterPriceDirection);
-                  confirm({ closeDropdown: false });
+                  // hide filter dropdown after search
+                  confirm({ closeDropdown: true });
                 }}
               >
                 Search
@@ -145,6 +149,7 @@ export default function ProductStats(props: IProductStats) {
       price,
     }))
     .filter((product) => {
+      // filter products accourding to search filter
       if (!searchPrice) return true;
       switch (searchPriceDirection) {
         case 'above':
@@ -159,6 +164,7 @@ export default function ProductStats(props: IProductStats) {
       }
     });
 
+  // apply order to chart bar
   const [order, setOrder] = useState('');
   let barData = products;
   if (order == 'ascend') {
@@ -167,16 +173,20 @@ export default function ProductStats(props: IProductStats) {
     barData = products.sort((a, b) => b.price - a.price);
   }
 
-  const handleTableChange = (_: any, filters: any, sorter: any) => {
+  const handleTableChange = (_: any, filters: any, sorter: any) =>
     setOrder(sorter.order);
-  };
 
   return (
     <section>
       <h1>Personal Information</h1>
       <Row gutter={48}>
         <Col xs={24} md={12}>
-          <Description title="Name" subtitle={form.getFieldValue('name')} />
+          <Description
+            title="Name"
+            subtitle={`${form.getFieldValue('lastName')} ${form.getFieldValue(
+              'firstName',
+            )}`}
+          />
         </Col>
         <Col xs={24} md={12}>
           <Description title="Email" subtitle={form.getFieldValue('email')} />

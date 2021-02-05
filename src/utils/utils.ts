@@ -3,7 +3,10 @@ export interface IProduct {
   price: number;
 }
 
-// check if product csv is valid
+/**
+ * check if product csv is valid
+ * @param {string} csv - csv string being validate
+ */
 export const validateProductCsv = (csv: string): boolean => {
   const items = csv.split('\n');
   if (items.length === 1 && !items[0]) return false;
@@ -18,7 +21,11 @@ export const validateProductCsv = (csv: string): boolean => {
   return true;
 };
 
-// parse csv string to product array
+/**
+ * parse csv string to product array
+ * @param {string} csv - csv string being parsed
+ */
+
 export const parseCsv = (csv: string | undefined): Array<IProduct> => {
   if (csv === null || csv === undefined || !validateProductCsv(csv)) return [];
   const items = csv.split('\n');

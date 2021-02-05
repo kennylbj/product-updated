@@ -84,6 +84,7 @@ export default function InputForm(props: IInputProps) {
   };
 
   const handleFileChange = (file: any) => {
+    // only remains the latest uploaded file
     if (file) {
       setFileList(file.fileList.slice(-1));
     }
@@ -114,13 +115,24 @@ export default function InputForm(props: IInputProps) {
     >
       <h1 className={styles.title}>User</h1>
       <Row gutter={24}>
-        <Col xs={24} md={12}>
+        <Col xs={24} sm={12} md={6}>
           <Form.Item
-            name="name"
-            label="Name"
-            rules={[{ required: true, message: 'Please input your name' }]}
+            name="lastName"
+            label="Last Name"
+            rules={[{ required: true, message: 'Please input your last name' }]}
           >
-            <Input placeholder="Name" />
+            <Input placeholder="Last Name" />
+          </Form.Item>
+        </Col>
+        <Col xs={24} sm={12} md={6}>
+          <Form.Item
+            name="firstName"
+            label="First Name"
+            rules={[
+              { required: true, message: 'Please input your first name' },
+            ]}
+          >
+            <Input placeholder="First Name" />
           </Form.Item>
         </Col>
         <Col xs={24} sm={12} md={6}>
