@@ -11,8 +11,7 @@ import {
   Modal,
 } from 'antd';
 import groupBy from 'lodash/groupBy';
-import countryCity from '@/utils/CountryCiity';
-import { validateProductCsv } from '@/utils/utils';
+import { validateProductCsv, getCountriesAndCities } from '@/utils/utils';
 import { IInputProps } from './index.type';
 import styles from './index.less';
 
@@ -33,7 +32,7 @@ export default function InputForm(props: IInputProps) {
     }
   };
 
-  const countryGroups = groupBy(countryCity, 'country');
+  const countryGroups = groupBy(getCountriesAndCities(), 'country');
   const countryOptions = Object.keys(countryGroups).map((item) => (
     <Option key={item} value={item}>
       {item}
@@ -41,7 +40,7 @@ export default function InputForm(props: IInputProps) {
   ));
 
   const cityOptions = selectedCountry
-    ? countryCity
+    ? getCountriesAndCities()
         .filter((item) => item.country === selectedCountry)
         .map((item) => (
           <Option key={item.city} value={item.city}>

@@ -1,4 +1,4 @@
-# umi project
+# product-updated
 
 ## Getting Started
 

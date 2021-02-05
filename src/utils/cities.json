@@ -1,0 +1,402 @@
+[
+  {
+    "city": "MOSKVA (Moscow)",
+    "country": "Russia"
+  },
+  {
+    "city": "LONDON",
+    "country": "UK"
+  },
+  {
+    "city": "St Petersburg",
+    "country": "Russia"
+  },
+  {
+    "city": "BERLIN",
+    "country": "Germany"
+  },
+  {
+    "city": "MADRID",
+    "country": "Spain"
+  },
+  {
+    "city": "ROMA",
+    "country": "Italy"
+  },
+  {
+    "city": "KIEV",
+    "country": "Ukraine"
+  },
+  {
+    "city": "PARIS",
+    "country": "France"
+  },
+  {
+    "city": "BUCURESTI (Bucharest)",
+    "country": "Romania"
+  },
+  {
+    "city": "BUDAPEST",
+    "country": "Hungary"
+  },
+  {
+    "city": "Hamburg",
+    "country": "Germany"
+  },
+  {
+    "city": "MINSK",
+    "country": "Belarus"
+  },
+  {
+    "city": "WARSZAWA (Warsaw)",
+    "country": "Poland"
+  },
+  {
+    "city": "BEOGRAD (Belgrade)",
+    "country": "Serbia"
+  },
+  {
+    "city": "WIEN (Vienna)",
+    "country": "Austria"
+  },
+  {
+    "city": "Kharkov",
+    "country": "Ukraine"
+  },
+  {
+    "city": "Barcelona",
+    "country": "Spain"
+  },
+  {
+    "city": "Novosibirsk",
+    "country": "Russia"
+  },
+  {
+    "city": "Nizhny Novgorod",
+    "country": "Russia"
+  },
+  {
+    "city": "Milano (Milan)",
+    "country": "Italy"
+  },
+  {
+    "city": "Ekaterinoburg",
+    "country": "Russia"
+  },
+  {
+    "city": "M眉nchen (Munich)",
+    "country": "Germany"
+  },
+  {
+    "city": "PRAHA (Prague)",
+    "country": "Czech Republic"
+  },
+  {
+    "city": "Samara",
+    "country": "Russia"
+  },
+  {
+    "city": "Omsk",
+    "country": "Russia"
+  },
+  {
+    "city": "SOFIA",
+    "country": "Bulgaria"
+  },
+  {
+    "city": "Dnepropetrovsk",
+    "country": "Ukraine"
+  },
+  {
+    "city": "Kazan",
+    "country": "Russia"
+  },
+  {
+    "city": "Ufa",
+    "country": "Russia"
+  },
+  {
+    "city": "Chelyabinsk",
+    "country": "Russia"
+  },
+  {
+    "city": "Donetsk",
+    "country": "Ukraine"
+  },
+  {
+    "city": "Napoli (Naples)",
+    "country": "Italy"
+  },
+  {
+    "city": "Birmingham",
+    "country": "UK"
+  },
+  {
+    "city": "Perm",
+    "country": "Russia"
+  },
+  {
+    "city": "Rostov-na-Donu",
+    "country": "Russia"
+  },
+  {
+    "city": "Odessa",
+    "country": "Ukraine"
+  },
+  {
+    "city": "Volgograd",
+    "country": "Russia"
+  },
+  {
+    "city": "Köln (Cologne)",
+    "country": "Germany"
+  },
+  {
+    "city": "Torino (Turin)",
+    "country": "Italy"
+  },
+  {
+    "city": "Voronezh",
+    "country": "Russia"
+  },
+  {
+    "city": "Krasnoyarsk",
+    "country": "Russia"
+  },
+  {
+    "city": "Saratov",
+    "country": "Russia"
+  },
+  {
+    "city": "ZAGREB",
+    "country": "Croatia"
+  },
+  {
+    "city": "Zaporozhye",
+    "country": "Ukraine"
+  },
+  {
+    "city": "Lódz",
+    "country": "Poland"
+  },
+  {
+    "city": "Marseille",
+    "country": "France"
+  },
+  {
+    "city": "RIGA",
+    "country": "Latvia"
+  },
+  {
+    "city": "Lvov",
+    "country": "Ukraine"
+  },
+  {
+    "city": "ATHINAI (Athens)",
+    "country": "Greece"
+  },
+  {
+    "city": "Salonika",
+    "country": "Greece"
+  },
+  {
+    "city": "STOCKHOLM",
+    "country": "Sweden"
+  },
+  {
+    "city": "Kraków",
+    "country": "Poland"
+  },
+  {
+    "city": "Valencia",
+    "country": "Spain"
+  },
+  {
+    "city": "AMSTERDAM",
+    "country": "Netherlands"
+  },
+  {
+    "city": "Leeds",
+    "country": "UK"
+  },
+  {
+    "city": "Tolyatti",
+    "country": "Russia"
+  },
+  {
+    "city": "Kryvy Rig",
+    "country": "Ukraine"
+  },
+  {
+    "city": "Sevilla",
+    "country": "Spain"
+  },
+  {
+    "city": "Palermo",
+    "country": "Italy"
+  },
+  {
+    "city": "Ulyanovsk",
+    "country": "Russia"
+  },
+  {
+    "city": "KISHINEV",
+    "country": "Moldova"
+  },
+  {
+    "city": "Genova",
+    "country": "Italy"
+  },
+  {
+    "city": "Izhevsk",
+    "country": "Russia"
+  },
+  {
+    "city": "Frankfurt am Main",
+    "country": "Germany"
+  },
+  {
+    "city": "Krasnodar",
+    "country": "Russia"
+  },
+  {
+    "city": "Wroclaw (Breslau)",
+    "country": "Poland"
+  },
+  {
+    "city": "Glasgow",
+    "country": "UK"
+  },
+  {
+    "city": "Yaroslave",
+    "country": "Russia"
+  },
+  {
+    "city": "Khabarovsk",
+    "country": "Russia"
+  },
+  {
+    "city": "Vladivostok",
+    "country": "Russia"
+  },
+  {
+    "city": "Zaragoza",
+    "country": "Spain"
+  },
+  {
+    "city": "Essen",
+    "country": "Germany"
+  },
+  {
+    "city": "Rotterdam",
+    "country": "Netherlands"
+  },
+  {
+    "city": "Irkutsk",
+    "country": "Russia"
+  },
+  {
+    "city": "Dortmund",
+    "country": "Germany"
+  },
+  {
+    "city": "Stuttgart",
+    "country": "Germany"
+  },
+  {
+    "city": "Barnaul",
+    "country": "Russia"
+  },
+  {
+    "city": "VILNIUS",
+    "country": "Lithuania"
+  },
+  {
+    "city": "Poznan",
+    "country": "Poland"
+  },
+  {
+    "city": "Düsseldorf",
+    "country": "Germany"
+  },
+  {
+    "city": "Novokuznetsk",
+    "country": "Russia"
+  },
+  {
+    "city": "LISBOA (Lisbon)",
+    "country": "Portugal"
+  },
+  {
+    "city": "HELSINKI",
+    "country": "Finland"
+  },
+  {
+    "city": "Málaga",
+    "country": "Spain"
+  },
+  {
+    "city": "Bremen",
+    "country": "Germany"
+  },
+  {
+    "city": "Sheffield",
+    "country": "UK"
+  },
+  {
+    "city": "SARAJEVO",
+    "country": "Bosnia"
+  },
+  {
+    "city": "Penza",
+    "country": "Russia"
+  },
+  {
+    "city": "Ryazan",
+    "country": "Russia"
+  },
+  {
+    "city": "Orenburg",
+    "country": "Russia"
+  },
+  {
+    "city": "Naberezhnye Tchelny",
+    "country": "Russia"
+  },
+  {
+    "city": "Duisburg",
+    "country": "Germany"
+  },
+  {
+    "city": "Lipetsk",
+    "country": "Russia"
+  },
+  {
+    "city": "Hannover",
+    "country": "Germany"
+  },
+  {
+    "city": "Mykolaiv",
+    "country": "Ukraine"
+  },
+  {
+    "city": "Tula",
+    "country": "Russia"
+  },
+  {
+    "city": "OSLO",
+    "country": "Norway"
+  },
+  {
+    "city": "Tyumen",
+    "country": "Russia"
+  },
+  {
+    "city": "KOBENHAVN (Copenhagen)",
+    "country": "Denmark"
+  },
+  {
+    "city": "Kemerovo",
+    "country": "Russia"
+  }
+]

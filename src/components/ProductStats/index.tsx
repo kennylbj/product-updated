@@ -183,8 +183,8 @@ export default function ProductStats(props: IProductStats) {
         <Col xs={24} md={12}>
           <Description
             title="Name"
-            subtitle={`${form.getFieldValue('lastName')} ${form.getFieldValue(
-              'firstName',
+            subtitle={`${form.getFieldValue('firstName')} ${form.getFieldValue(
+              'lastName',
             )}`}
           />
         </Col>

@@ -1,3 +1,4 @@
+const cities = require('./cities.json');
 export interface IProduct {
   name: string;
   price: number;
@@ -39,3 +40,8 @@ export const parseCsv = (csv: string | undefined): Array<IProduct> => {
       };
     });
 };
+
+export const getCountriesAndCities = (): Array<{
+  city: string;
+  country: string;
+}> => cities;
