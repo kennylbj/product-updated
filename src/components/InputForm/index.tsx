@@ -23,8 +23,6 @@ export default function InputForm(props: IInputProps) {
   const { form, onSubmit } = props;
   const [selectedCountry, setSelectedCountry] = useState('');
 
-  const [fileList, setFileList] = useState<Array<any>>([]);
-
   const handleFieldChange = (fields: any) => {
     if (fields[0].name[0] === 'country') {
       setSelectedCountry(fields[0].value);
@@ -80,13 +78,6 @@ export default function InputForm(props: IInputProps) {
         resolve(file);
       }
     });
-  };
-
-  const handleFileChange = (file: any) => {
-    // only remains the latest uploaded file
-    if (file) {
-      setFileList(file.fileList.slice(-1));
-    }
   };
 
   const handleFileRemove = (): Promise<boolean> => {
@@ -214,8 +205,7 @@ export default function InputForm(props: IInputProps) {
         <Upload
           accept=".csv"
           name="csvFile"
-          fileList={fileList}
-          onChange={handleFileChange}
+          fileList={[]}
           beforeUpload={handleBeforeUpload}
           onRemove={handleFileRemove}
         >
