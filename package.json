@@ -1,6 +1,6 @@
 {
   "private": true,
-  "homepage": "http://kennylbj.github.io/product",
+  "homepage": "http://kennylbj.github.io/product-updated",
   "scripts": {
     "start": "umi dev",
     "build": "umi build",
