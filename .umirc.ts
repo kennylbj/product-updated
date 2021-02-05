@@ -1,6 +1,7 @@
 import { defineConfig } from 'umi';
 
 export default defineConfig({
+  base: '/product-updated/',
   publicPath: '/product-updated/',
   nodeModulesTransform: {
     type: 'none',

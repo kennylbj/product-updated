@@ -12,16 +12,14 @@ import {
 } from 'antd';
 import groupBy from 'lodash/groupBy';
 import countryCity from '@/utils/CountryCiity';
+import { validateProductCsv } from '@/utils/utils';
+import { IInputProps } from './index.type';
 import styles from './index.less';
 
 const { Option } = Select;
 const { TextArea } = Input;
 const { confirm } = Modal;
 
-export interface IInputProps {
-  form: any;
-  onSubmit: any;
-}
 export default function InputForm(props: IInputProps) {
   const { form, onSubmit } = props;
   const [selectedCountry, setSelectedCountry] = useState('');
@@ -91,7 +89,7 @@ export default function InputForm(props: IInputProps) {
     }
   };
 
-  const handleFileRemove = (file: any): Promise<boolean> => {
+  const handleFileRemove = (): Promise<boolean> => {
     return new Promise((resolve, reject) => {
       confirm({
         title: 'Do you Want to delete this csv?',
@@ -219,7 +217,17 @@ export default function InputForm(props: IInputProps) {
         style={{ marginTop: '24px' }}
         name="csvInput"
         label="Manual CSV Data Input"
-        rules={[{ required: true, message: 'Please input csv' }]}
+        rules={[
+          { required: true, message: 'Please input csv' },
+          () => ({
+            validator(_, value) {
+              if (validateProductCsv(value)) {
+                return Promise.resolve();
+              }
+              return Promise.reject('Invalid csv content');
+            },
+          }),
+        ]}
       >
         <TextArea
           style={{ width: '100%' }}
